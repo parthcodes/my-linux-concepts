@@ -1,0 +1,44 @@
+### Explanation ###
+
+File System hierarchy standard - FHS
+http://www.pathname.com/fhs/pub/fhs-2.3.html
+
+Very good:
+https://www.geeksforgeeks.org/linux-file-hierarchy-structure/
+
+
+
+Good:
+In microsoft there are multiple roots
+	- Each drive , C: D: etc are roots
+
+In linux there is just ONE ROOT.
+/ is the root of the filesystem.
+
+Bin -- all the commands
+Boot -- boot processes , kernel
+Dev - harddrives, keyboard, usbs etc
+Etc - config files for system services
+Lib / lib4-- library code that is shared
+MNT -- other harddrives that you mount.
+
+/usr/sbin -- system binary (usually root use has access.)
+Linux discriminates between 'normal' executables and those used for system maintenance and/or administrative tasks. The latter reside either here or - the less important ones - in /usr/sbin. Locally installed system administration programs should be placed into /usr/local/sbin.
+
+/usr : Programs executed after /usr is known to be mounted (when there are no problems) are generally placed into /usr/sbin. This directory contains binaries that are essential to the working of the system. These include system administration as well as maintenance and hardware configuration programs. You may find lilo, fdisk, init, ifconfig, etc.... here.
+
+Proc - https://www.tldp.org/LDP/Linux-Filesystem-Hierarchy/html/proc.html
+/proc is very special in that it is also a virtual filesystem. It's sometimes referred to as a process information pseudo-file system. It doesn't contain 'real' files but runtime system information (e.g. system memory, devices mounted, hardware configuration, etc). For this reason it can be regarded as a control and information centre for the kernel. In fact, quite a lot of system utilities are simply calls to files in this directory.
+
+/var: files that tends to grow over time, log files for example.
+
+
+
+
+
+Absolute path: Full path of the directory or file starting from root (/)
+i.e /tmp/dir1/dir1/file.txt
+
+
+/    -> root
+~  -> home dir of the logged on user.
