@@ -31,9 +31,6 @@ echo "############"
 min_time=0
 max_time=0
 max_profit=0
-start_price=0
-end_price=0
-
 
 sorted_array_count=0
 while [ $sorted_array_count -le 8 ]
