@@ -1,5 +1,10 @@
 #!/bin/bash
 
+: '
+A stock price is measured hourly from 9 AM to 6 PM and the prices for each hour is listed in stock_prices array.
+This bash script derives maximum possible profit.
+'
+
 stock_prices=(10 8 7 9 5 7 10 11 10 8)
 
 # populate associated array for stock price at time.
