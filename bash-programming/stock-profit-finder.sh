@@ -6,6 +6,7 @@ This bash script derives maximum possible profit.
 
 run the script as:
 sh stock-profit-finder.sh
+set the below stock_prices variable to the value you need.
 '
 
 stock_prices=(10 8 7 9 5 7 10 11 10 8)
