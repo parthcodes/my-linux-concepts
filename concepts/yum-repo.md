@@ -1,4 +1,4 @@
-#### `yum-config-manager` to Add, Enable and disable yum repositories.
+#### *yum-config-manager to Add, Enable and disable yum repositories.*
 
 ###### Resources
 - `https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/6/html/deployment_guide/sec-managing_yum_repositories`
