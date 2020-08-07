@@ -34,8 +34,6 @@ Proc - https://www.tldp.org/LDP/Linux-Filesystem-Hierarchy/html/proc.html
 
 
 
-
-
 Absolute path: Full path of the directory or file starting from root (/)
 i.e /tmp/dir1/dir1/file.txt
 
